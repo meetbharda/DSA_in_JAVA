@@ -46,6 +46,15 @@ public class BinaryTreeB {
             System.out.print(root.data + " ");
             inorder(root.right);
         }
+
+        public static void postorder(Node root){
+            if(root == null){
+                return;
+            }
+            postorder(root.left);
+            postorder(root.right);
+            System.out.print(root.data + " ");
+        }
     }
 
     public static void main(String[] args) {
@@ -54,6 +63,7 @@ public class BinaryTreeB {
         Node root = tree.buildTree(nodes);
         // System.out.println(root.data);
         // tree.preorder(root);
-        tree.inorder(root);
+        // tree.inorder(root);
+        tree.postorder(root);
     }
 }
