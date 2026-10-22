@@ -1,0 +1,11 @@
+
+# Ignore Java compiled files
+*.class
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore build folders
+bin/
+out/
